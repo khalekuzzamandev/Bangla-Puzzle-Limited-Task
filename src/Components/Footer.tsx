@@ -1,3 +1,4 @@
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -27,58 +28,49 @@ const companyLinks = [
 ];
 
 const socialLinks = [
-  {
-    name: "Facebook",
-    href: "https://facebook.com",
-    icon: FaFacebookF,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com",
-    icon: FaLinkedinIn,
-  },
-  {
-    name: "YouTube",
-    href: "https://youtube.com",
-    icon: FaYoutube,
-  },
-  {
-    name: "WhatsApp",
-    href: "https://whatsapp.com",
-    icon: FaWhatsapp,
-  },
+  { name: "Facebook", href: "https://facebook.com", icon: FaFacebookF },
+  { name: "LinkedIn", href: "https://linkedin.com", icon: FaLinkedinIn },
+  { name: "YouTube", href: "https://youtube.com", icon: FaYoutube },
+  { name: "WhatsApp", href: "https://whatsapp.com", icon: FaWhatsapp },
 ];
 
-const footerPolicies = [
+const footerLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Refund Policy", href: "/refund-policy" },
   { name: "Cookie Policy", href: "/cookie-policy" },
   { name: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
 
+const navLink =
+  "inline-block text-[15px] font-normal leading-[22px] text-[#626d7d] no-underline transition-colors duration-200 hover:text-[#5b1fe0]";
+
+const colHeading =
+  "mb-[14px] text-[12px] font-semibold leading-4 tracking-[0.08em] text-[#526071] uppercase";
+
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-gray-200 bg-white">
-      <div className="mx-auto max-w-[1200px] px-6 pt-12 md:px-8">
-        <div className="grid grid-cols-1 gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] lg:gap-16">
-
-          {/* Brand & Contact */}
-          <div className="flex flex-col items-start">
+    <footer className="w-full bg-white font-['Inter',sans-serif] text-[#626d7d] px-6 pt-10 pb-0 max-[768px]:pt-[35px] max-[480px]:px-5 max-[480px]:pt-8">
+      <div className="w-full max-w-[1104px] mx-auto">
+        {/* Main Footer */}
+        <div className="grid grid-cols-[572px_286px_1fr] pb-10 max-[1150px]:grid-cols-[2fr_1fr_1fr] max-[1150px]:gap-[30px] max-[768px]:grid-cols-2 max-[768px]:gap-x-6 max-[768px]:gap-y-10 max-[480px]:grid-cols-1 max-[480px]:gap-8">
+          {/* Brand */}
+          <div className="max-[768px]:col-span-full max-[480px]:col-auto">
             <Link
               href="/"
-              className="text-[9px] font-black tracking-[3px] text-black"
+              className="inline-block mt-0.5 ml-[14px] font-['Courier_New',monospace] text-[8px] font-bold leading-[12px] tracking-[2px] text-[#111827] uppercase no-underline"
             >
-              THETINY.SITE
+              thetiny.site
             </Link>
 
-            <p className="mt-8 max-w-[350px] text-[15px] leading-6 text-[#626d7d]">
-              The fastest way to shorten, track, and manage your URLs.
-              Trusted by thousands of marketers, developers, and
-              businesses across Bangladesh and beyond.
+            <p className="max-w-[322px] mt-9 mb-0 text-[15px] font-normal leading-[24.5px] text-[#626d7d] max-[768px]:max-w-[380px] max-[480px]:mt-7 max-[480px]:text-[14px]">
+              The fastest way to shorten, track, and manage
+              your URLs. Trusted by thousands of marketers,
+              developers, and businesses across Bangladesh
+              and beyond.
             </p>
 
-            {/* Social Media */}
-            <div className="mt-6 flex items-center gap-4">
+            {/* Social Links */}
+            <div className="flex items-center gap-4 mt-[25px] max-[480px]:gap-[13px]">
               {socialLinks.map(({ name, href, icon: Icon }) => (
                 <Link
                   key={name}
@@ -86,46 +78,40 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={name}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f1f2f4] text-[17px] text-[#4b5563] transition-all duration-300 hover:-translate-y-1 hover:bg-[#5b21ff] hover:text-white"
+                  className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#f1f2f4] text-[#4b5563] no-underline transition-[background,color] duration-[250ms] ease-in-out hover:bg-[#5b1fe0] hover:text-white"
                 >
-                  <Icon />
+                  <Icon className="w-[17px] h-[17px]" />
                 </Link>
               ))}
             </div>
 
-            {/* Contact Details */}
-            <div className="mt-4 flex flex-col gap-2">
+            {/* Contact Information */}
+            <div className="flex flex-col gap-[9px] mt-[21px]">
               <Link
                 href="mailto:banglapuzzle@gmail.com"
-                className="flex items-center gap-2 text-[14px] text-[#626d7d] transition-colors hover:text-[#5b21ff]"
+                className="flex items-center gap-2 text-[14px] font-normal leading-5 text-[#626d7d] no-underline transition-colors duration-200 hover:text-[#5b1fe0]"
               >
-                <MdEmail className="shrink-0 text-[19px] text-[#5b21ff]" />
-                banglapuzzle@gmail.com
+                <MdEmail className="w-4 h-4 shrink-0 text-[#5b1fe0]" />
+                <span>banglapuzzle@gmail.com</span>
               </Link>
 
               <Link
                 href="tel:+8801880811048"
-                className="flex items-center gap-2 text-[14px] text-[#626d7d] transition-colors hover:text-[#5b21ff]"
+                className="flex items-center gap-2 text-[14px] font-normal leading-5 text-[#626d7d] no-underline transition-colors duration-200 hover:text-[#5b1fe0]"
               >
-                <MdPhone className="shrink-0 text-[19px] text-[#5b21ff]" />
-                +880 1880-811048
+                <MdPhone className="w-4 h-4 shrink-0 text-[#5b1fe0]" />
+                <span>+880 1880-811048</span>
               </Link>
             </div>
           </div>
 
-          {/* Product Navigation */}
+          {/* Product */}
           <div>
-            <h3 className="mb-5 text-[13px] font-bold tracking-[1px] text-[#526071]">
-              PRODUCT
-            </h3>
-
-            <ul className="flex flex-col gap-3">
+            <h4 className={colHeading}>PRODUCT</h4>
+            <ul className="list-none m-0 p-0">
               {productLinks.map(({ name, href }) => (
-                <li key={name}>
-                  <Link
-                    href={href}
-                    className="text-[15px] text-[#626d7d] transition-colors duration-200 hover:text-[#5b21ff]"
-                  >
+                <li key={name} className="mb-[11.5px]">
+                  <Link href={href} className={navLink}>
                     {name}
                   </Link>
                 </li>
@@ -133,19 +119,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company Navigation */}
+          {/* Company */}
           <div>
-            <h3 className="mb-5 text-[13px] font-bold tracking-[1px] text-[#526071]">
-              COMPANY
-            </h3>
-
-            <ul className="flex flex-col gap-3">
+            <h4 className={colHeading}>COMPANY</h4>
+            <ul className="list-none m-0 p-0">
               {companyLinks.map(({ name, href }) => (
-                <li key={name}>
-                  <Link
-                    href={href}
-                    className="text-[15px] text-[#626d7d] transition-colors duration-200 hover:text-[#5b21ff]"
-                  >
+                <li key={name} className="mb-[11.5px]">
+                  <Link href={href} className={navLink}>
                     {name}
                   </Link>
                 </li>
@@ -154,25 +134,22 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright & Policies */}
-        <div className="flex flex-col justify-between gap-5 border-t border-gray-200 py-8 md:flex-row md:items-center">
-          <p className="text-[14px] leading-6 text-[#626d7d]">
-            © {new Date().getFullYear()}{" "}
-            <Link
-              href="/"
-              className="text-[#5b21ff] transition-colors hover:underline"
-            >
+        {/* Bottom Footer */}
+        <div className="min-h-[81px] flex flex-wrap items-center justify-between gap-4 border-t border-[#e1e5eb] py-6 max-[768px]:flex-col max-[768px]:items-start max-[768px]:py-[25px]">
+          <p className="m-0 text-[14px] font-normal leading-5 text-[#626d7d] max-[480px]:text-[13px]">
+            © 2026{" "}
+            <Link href="/" className="!text-[#5b1fe0] no-underline hover:underline">
               Bangla Puzzle Limited.
             </Link>{" "}
             All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-            {footerPolicies.map(({ name, href }) => (
+          <div className="flex flex-wrap items-center gap-6 max-[768px]:gap-x-[22px] max-[768px]:gap-y-4 max-[480px]:gap-x-[18px] max-[480px]:gap-y-[14px]">
+            {footerLinks.map(({ name, href }) => (
               <Link
                 key={name}
                 href={href}
-                className="text-[14px] text-[#626d7d] transition-colors duration-200 hover:text-[#5b21ff]"
+                className="text-[14px] font-normal leading-5 text-[#626d7d] no-underline transition-colors duration-200 hover:text-[#5b1fe0] max-[480px]:text-[13px]"
               >
                 {name}
               </Link>
