@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TheTiny.Site – Frontend Assignment
 
-## Getting Started
+A modern, clean, and responsive URL shortener website homepage inspired by [TheTiny.Site](https://thetiny.site).
 
-First, run the development server:
+This project was developed as part of the **Intern Front-end Developer Assignment** for **Bangla Puzzle Limited**.
+
+## 🚀 Live Preview
+
+- **Website:** Add your deployed website URL here
+- **GitHub Repository:** https://github.com/khalekuzzamandev/Bangla-Puzzle-Limited-Task
+
+## 📌 Project Overview
+
+The goal of this project was to recreate the homepage of TheTiny.Site with a modern user interface, clean layout, and responsive design.
+
+The website focuses on providing a professional user experience with carefully designed sections, consistent typography, and responsive layouts for different screen sizes.
+
+## ✨ Features
+
+- Modern and clean homepage design
+- Fully responsive layout
+- Mobile, tablet, and desktop compatibility
+- Professional navigation and footer sections
+- Clean typography and consistent color palette
+- Interactive buttons and navigation links
+- Smooth hover effects and transitions
+- Reusable React components
+- Responsive URL shortening interface design
+
+## 🛠️ Technologies Used
+
+- **Next.js** – React framework
+- **React.js** – Component-based UI development
+- **Tailwind CSS** – Utility-first styling
+- **JavaScript / JSX** – Application development
+- **React Icons** – Icon library
+
+## 📂 Getting Started
+
+Follow these instructions to run the project locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v18 or later)
+- npm
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/khalekuzzamandev/Bangla-Puzzle-Limited-Task.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd Bangla-Puzzle-Limited-Task
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**5. Open in your browser**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Responsive Design
 
-## Learn More
+The website is designed to provide a consistent experience across different devices:
 
-To learn more about Next.js, take a look at the following resources:
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Assignment Information
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Information | Details |
+|---|---|
+| Company | Bangla Puzzle Limited |
+| Position | Intern Front-end Developer |
+| Assignment | TheTiny.Site Homepage Design |
+| Framework | Next.js |
+| Styling | Tailwind CSS |
+| Developer | Md. Khalekuzzaman |
 
-## Deploy on Vercel
+## 👨‍💻 Developer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Md. Khalekuzzaman**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: [@khalekuzzamandev](https://github.com/khalekuzzamandev)
+- LinkedIn: [Md. Khalekuzzaman](https://www.linkedin.com/in/khalekuzzamandev/)
+- Portfolio: [khalekuzzaman.vercel.app](https://khalekuzzaman.vercel.app/)
+
+---
+
+⭐ Thank you for reviewing my assignment!
+
+**Developed with ❤️ by Md. Khalekuzzaman**
