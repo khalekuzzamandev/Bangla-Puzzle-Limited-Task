@@ -8,9 +8,8 @@ const PremiumFeatures = () => {
           <p className="premium-description">
             Go beyond basic shortening with a full suite of marketing and
             developer tools — custom branded links, UTM builders, deep
-            analytics, QR codes, and a REST API for your apps.
+            analytics, QR codes, REST API for your apps.
           </p>
-
           <ul className="premium-features">
             <li>Custom branded short links</li>
             <li>UTM parameter builder</li>
