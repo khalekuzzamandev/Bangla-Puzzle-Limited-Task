@@ -7,7 +7,7 @@ const PremiumFeatures = () => {
           <h2>Unlock powerful tools for serious growth.</h2>
           <p className="premium-description">
             Go beyond basic shortening with a full suite of marketing and
-            developer tools — custom branded links, UTM builders, deep
+            developer tools — custom branded links, UTM builders, deep way
             analytics, QR codes, REST API for your apps.
           </p>
           <ul className="premium-features">
