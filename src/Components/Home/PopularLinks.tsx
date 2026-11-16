@@ -71,7 +71,7 @@ const PopularLinks = ({ links = defaultLinks, onQrClick }: Props) => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="m-0 text-[32px] font-extrabold leading-10 tracking-[-0.02em] text-[#111111]">
-            Most Popular Links
+            Most Popular Links is here
           </h2>
           <p className="mt-3 mb-0 text-[16px] font-normal leading-6 text-[#6b7280]">
             Check out the most clicked links on our platform
