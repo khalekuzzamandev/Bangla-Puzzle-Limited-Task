@@ -34,7 +34,7 @@ const PremiumFeatures = () => {
                 <span>shorturl.bd/yt3Nm8</span>
                 <strong>589</strong>
               </div>
-              <div className="analytics-track"><span style={{ width: "47%" }} /></div>
+              <div className="analytics-track"><span style={{ width: "48%" }} /></div>
             </div>
             <div className="analytics-row">
               <div className="analytics-row-heading">
