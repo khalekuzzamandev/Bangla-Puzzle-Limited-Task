@@ -53,10 +53,10 @@ const Navbar = () => {
             Log In
           </Link>
           <Link
-            href="/signup"
+            href="/dashboard"
             className="flex h-[37px] items-center rounded-lg bg-[#5f20f5] px-[18px] text-[14px] font-bold !text-white no-underline transition-colors duration-200 hover:bg-[#4f14dc]"
           >
-            Get Started Free
+            Dashboard
           </Link>
         </div>
 
@@ -97,11 +97,11 @@ const Navbar = () => {
               Log In
             </Link>
             <Link
-              href="/signup"
+              href="/dashboard"
               onClick={() => setOpen(false)}
               className="flex h-[42px] items-center justify-center rounded-lg bg-[#5f20f5] text-[14px] font-bold !text-white no-underline"
             >
-              Get Started Free
+              Dashboard
             </Link>
           </div>
         </div>
